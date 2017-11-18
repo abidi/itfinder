@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'java ITFinder'
+                sh 'java ITFinder/ITFinder'
             }
         }
     }
