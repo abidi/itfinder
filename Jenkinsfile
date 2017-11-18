@@ -4,7 +4,7 @@ pipeline {
 
     agent {
         docker {
-            image 'java'
+            image 'ubuntu/java'
             args '-u root'
         }
     }
