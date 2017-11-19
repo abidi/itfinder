@@ -13,6 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
+                sh 'export CLASSPATH=/root/'
                 sh 'javac ITFinder/ITFinder.java'
             }
         }
@@ -20,6 +21,7 @@ pipeline {
             steps {
                 echo 'Testing...'
                 sh 'echo ${CLASSPATH};echo " **!"'
+                sh 'java ITFinder'
             }
         }
     }
