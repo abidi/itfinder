@@ -3,7 +3,7 @@
 pipeline {
 
     agent {
-        docker-slv {
+        docker {
             image 'jenkins-java'
             
         }
