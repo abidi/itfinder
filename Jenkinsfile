@@ -15,6 +15,7 @@ pipeline {
                 echo 'Building...'
                 sh 'export CLASSPATH=/root/'
                 sh 'javac ITFinder/ITFinder.java'
+                sh 'ls ; pwd'
             }
         }
         stage('Test') {
