@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Testing...'
                 sh 'echo ${CLASSPATH};echo " **!"'
-                sh 'java ITFinder'
+                sh 'java /root/ITFinder'
             }
         }
     }
