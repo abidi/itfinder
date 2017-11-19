@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Testing...'
                 sh 'echo ${CLASSPATH};echo " **!"'
-                sh 'java /root/ITFinder'
+                sh 'java /var/lib/jenkins/workspace/itfinder/ITFinder/ITFinder'
             }
         }
     }
