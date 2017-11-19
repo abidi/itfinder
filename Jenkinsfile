@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'javac ITFinder/ITFinder.java /'
+                sh 'javac ITFinder/ITFinder.java'
             }
         }
         stage('Test') {
