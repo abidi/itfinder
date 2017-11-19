@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'java /ITFinder.class'
+                sh 'echo ${CLASSPATH};echo " **!"'
             }
         }
     }
