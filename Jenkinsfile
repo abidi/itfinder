@@ -19,7 +19,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh '
                 sh 'java /ITFinder.class'
             }
         }
