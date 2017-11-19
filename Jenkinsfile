@@ -4,7 +4,7 @@ pipeline {
 
     agent {
         docker {
-            image 'java'
+            image 'ubuntu/java'
             args '-u root'
         }
     }
@@ -12,8 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
-                sh 'export CLASSPATH=/root/'
+                echo 'Building...'                
                 sh 'javac ITFinder/ITFinder.java'
                 sh 'ls ; pwd'
             }
@@ -22,7 +21,7 @@ pipeline {
             steps {
                 echo 'Testing...'
                 sh 'echo ${CLASSPATH};echo " **!"'
-                sh 'java /var/lib/jenkins/workspace/itfinder/ITFinder/ITFinder'
+                sh 'java ITFinder.class'
             }
         }
     }
