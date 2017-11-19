@@ -3,9 +3,9 @@
 pipeline {
 
     agent {
-        docker {
-            image '483ea2440ac5'
-            args '-u root'
+        docker-slv {
+            image 'jenkins-java'
+            
         }
     }
 
