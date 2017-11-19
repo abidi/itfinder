@@ -14,13 +14,11 @@ pipeline {
             steps {
                 echo 'Building...'                
                 sh 'javac ITFinder/ITFinder.java'
-                sh 'ls ; pwd'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'echo ${CLASSPATH};echo " **!"'
                 sh 'java ITFinder.class'
             }
         }
