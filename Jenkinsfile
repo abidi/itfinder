@@ -2,7 +2,11 @@
 
 pipeline {
 
-    agent any
+    agent {
+        docker {
+            image 'abdelazizabidiit/jenkins-java:firstimagepush'
+            
+        }
     }
 
     stages {
