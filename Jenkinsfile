@@ -2,10 +2,7 @@
 
 pipeline {
 
-    agent {
-        docker {
-            image 'jenkins-java'
-        }
+    agent any
     }
 
     stages {
