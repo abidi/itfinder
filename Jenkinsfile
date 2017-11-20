@@ -5,7 +5,7 @@ pipeline {
     agent {
         docker {
             image 'abdelazizabidiit/jankins-java:firstimagepush'
-            
+            args '-u root'
         }
     }
 
