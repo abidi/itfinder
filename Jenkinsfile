@@ -4,7 +4,7 @@ pipeline {
 
     agent {
         docker {
-            image 'abdelazizabidiit/jankins-java:firstimagepush'
+            image 'abdelazizabidiit/jenkins-java:latest'
             args '-u root'
         }
     }
@@ -14,12 +14,13 @@ pipeline {
             steps {
                 echo 'Building...'                
                 sh 'javac ITFinder/ITFinder.java'
+                sh 'export CLASSpwd'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'java ITFinder.class'
+                sh 'java ITFinder.ITFinder'
             }
         }
     }
