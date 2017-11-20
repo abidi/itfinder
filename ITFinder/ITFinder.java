@@ -10,8 +10,8 @@ package ITFinder;
  */
 public class ITFinder {
     public static void main(String []args) {
-      System.out.println("Hello World"); // prints Hello World
-      System.out.println("Hello World !!"); // prints Hello World
+      System.out.println("Connecting to LinkedIN"); // prints Hello World
+      System.out.println("..."); // prints Hello World
    }
 }
 
