@@ -4,7 +4,7 @@ pipeline {
 
     agent {
         docker {
-            image 'abdelazizabidiit/jenkins-java:firstimagepush'
+            image 'abdelazizabidiit/jankins-java:firstimagepush'
             
         }
     }
